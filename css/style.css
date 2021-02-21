@@ -211,6 +211,7 @@ header {
 
 /* POPULAR BOOKS START */
 .popular-books {
+  min-height: 100vh;
   position: relative;
 }
 
@@ -225,6 +226,24 @@ header {
 }
 
 .bg-video {
-  object-fit: cover;
+  /* set rules to fill bg */
+  min-height: 100%;
+  min-width: 1200px;
+  /* set up proportionat scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Specific to this particular video */
+  .bg-video {
+    left: 50%;
+    margin-left: -600px; /* 50% */
+  }
 }
 /* POPULAR BOOKS END */

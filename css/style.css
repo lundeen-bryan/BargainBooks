@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 /* HEADER */
 header {
   height: 100vh;
@@ -84,3 +88,31 @@ header {
   text-shadow: 2px 5px 20px #aaa;
 }
 /* COMMON TITLE END */
+
+/* GALLERY START */
+
+.gallery-img {
+  backface-visibility: hidden;
+  transition: all 0.5s;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.first-row {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: all 2.3s;
+}
+.second-row {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: all 2.3s;
+}
+
+.change .first-row,
+.change .second-row {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* GALLERY END */

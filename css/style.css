@@ -384,4 +384,21 @@ video .bg-video {
     transform: translateX(0);
   }
 }
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+  background: transparent;
+  font: 18px;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(250, 250, 250, 0.8);
+  box-shadow: none;
+}
+
 /* CONTACT.END */

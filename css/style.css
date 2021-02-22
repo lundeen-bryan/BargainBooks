@@ -402,3 +402,12 @@ video .bg-video {
 }
 
 /* CONTACT.END */
+
+/* FOOTER.START */
+hr.socket {
+  border-top: 0.2rem solid #666b71;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+/* FOOTER.END */
